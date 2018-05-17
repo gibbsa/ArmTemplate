@@ -1,6 +1,7 @@
 # Simple deployment of a VM Scale Set of Linux VMs with a jumpbox
 
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fgibbsa%2FArmTemplate%2Fmaster%2FLinuxScaleSetJumpbox%2Fazuredeploy.json" target="_blank">
+</a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F201-vmss-linux-jumpbox%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
