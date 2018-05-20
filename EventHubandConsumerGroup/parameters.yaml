@@ -7,5 +7,5 @@
     "value": "Standard"
   "eventHubName":
     "value": "eventhubname"
-  consumerGroupName:
-    value: 'consumername'
+  "consumerGroupName":
+    "value": "consumername"
