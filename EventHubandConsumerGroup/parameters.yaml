@@ -2,10 +2,10 @@
 contentVersion: "1.0.0.0"
 parameters: 
  namespaceName: 
-  value: ""
+  value: SampleNameSpace
  eventhubSku: 
   value: Standard
  eventHubName: 
-  value: ""
+  value: SampleEvenhubName
  consumerGroupName: 
-  value: ""
+  value: SampleConsumerName
