@@ -1,7 +1,12 @@
-"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#"
-contentVersion: "1.0.0.0"
-parameters: 
- namespaceName: "test"
- eventhubSku: "Standard"
- eventHubName: "test"
- consumerGroupName: "test"
+---
+"$schema": http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#
+contentVersion: 1.0.0.0
+parameters:
+  namespaceName:
+    value: ''
+  eventhubSku:
+    value: Standard
+  eventHubName:
+    value: ''
+  consumerGroupName:
+    value: ''
