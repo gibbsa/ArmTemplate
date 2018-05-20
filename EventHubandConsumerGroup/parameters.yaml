@@ -8,4 +8,4 @@ parameters:
  eventHubName: 
   value: SampleEvenhubName
  consumerGroupName: 
-  value: SampleConsumer
+  value: SampleConsumerSpace
