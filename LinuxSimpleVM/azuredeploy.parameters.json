@@ -6,8 +6,13 @@
       "value": "shawngib"
     },
     "adminPassword": {
-      "value": "Myb@dpassword#1"
-    },
+            "reference": {
+              "keyVault": {
+                "id": "/subscriptions/bf031e99-23ef-4cc3-b5a9-b2761eb6126d/resourceGroups/mysfkeys/providers/Microsoft.KeyVault/vaults/mysfkeys"
+              },
+              "secretName": "password"
+            }
+        },
     "dnsLabelPrefix": {
       "value": "MyLinux"
     }
