@@ -48,7 +48,7 @@
         "description": "Application Tag"
       }
     },
-    "environment": {
+    "environmentName": {
       "type": "string",
       "defaultValue": "Development",
       "allowedValues": [
