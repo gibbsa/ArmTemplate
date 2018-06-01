@@ -51,8 +51,12 @@
     "environment": {
       "type": "string",
       "defaultValue": "Development",
+      "allowedValues": [
+        "Production",
+        "Development"
+      ],
       "metadata": {
-        "description": "Created By Tag"
+        "description": "Environment Tag"
       }
     },
     "location": {
@@ -159,6 +163,7 @@
         "Department": "[parameters('departmentName')]",
         "Application": "[parameters('applicationName')]",
         "environment": "[parameters('environmentName')]"
+      },
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
         "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
