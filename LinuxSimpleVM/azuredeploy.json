@@ -32,6 +32,28 @@
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
       }
+    }
+    ,
+    "departmentName": {
+      "type": "string",
+      "defaultValue": "MyDepartment",
+      "metadata": {
+        "description": "Department Tag"
+      }
+    },
+    "applicationName": {
+      "type": "string",
+      "defaultValue": "MyApp",
+      "metadata": {
+        "description": "Application Tag"
+      }
+    },
+    "environment": {
+      "type": "string",
+      "defaultValue": "Development",
+      "metadata": {
+        "description": "Created By Tag"
+      }
     },
     "location": {
       "type": "string",
@@ -133,6 +155,10 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[parameters('location')]",
+      "tags": {
+        "Department": "[parameters('departmentName')]",
+        "Application": "[parameters('applicationName')]",
+        "environment": "[parameters('environmentName')]"
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
         "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
