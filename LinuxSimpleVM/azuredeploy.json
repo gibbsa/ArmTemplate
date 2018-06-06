@@ -34,26 +34,26 @@
       }
     }
     ,
-    "departmentName": {
+    "lobtId": {
       "type": "string",
-      "defaultValue": "MyDepartment",
+      "defaultValue": "MyDepartmentApp",
       "metadata": {
-        "description": "Department Tag"
+        "description": "Line of Business Technology ID Tag"
       }
     },
-    "applicationName": {
+    "regionName": {
       "type": "string",
-      "defaultValue": "MyApp",
+      "defaultValue": "ca-central-1",
       "metadata": {
-        "description": "Application Tag"
+        "description": "The resource region Tag"
       }
     },
     "environmentName": {
       "type": "string",
-      "defaultValue": "Development",
+      "defaultValue": "nprod",
       "allowedValues": [
-        "Production",
-        "Development"
+        "prod",
+        "nprod"
       ],
       "metadata": {
         "description": "Environment Tag"
@@ -160,8 +160,8 @@
       "name": "[variables('vmName')]",
       "location": "[parameters('location')]",
       "tags": {
-        "Department": "[parameters('departmentName')]",
-        "Application": "[parameters('applicationName')]",
+        "lobt_id": "[parameters('lobtId')]",
+        "region": "[parameters('regionName')]",
         "environment": "[parameters('environmentName')]"
       },
       "dependsOn": [
