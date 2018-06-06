@@ -36,9 +36,9 @@
     ,
     "lobtId": {
       "type": "string",
-      "defaultValue": "MyDepartmentApp",
+      "defaultValue": "[subscription().subscriptionId]",
       "metadata": {
-        "description": "Line of Business Technology ID Tag"
+        "description": "Line of Business Technology ID Tag - Subscription ID"
       }
     },
     "regionName": {
