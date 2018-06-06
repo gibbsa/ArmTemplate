@@ -43,7 +43,7 @@
     },
     "regionName": {
       "type": "string",
-      "defaultValue": "ca-central-1",
+      "defaultValue": "[resourceGroup().location]",
       "metadata": {
         "description": "The resource region Tag"
       }
